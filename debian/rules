@@ -29,7 +29,7 @@ install: build
 	dh_clean -k
 	dh_installdirs
 
-	cp -a core.sh debian/grml-core/usr/lib/grml-core/
+	cp -a core.sh debian/grml-core/usr/lib/grml/
 
 # Build architecture-dependent files here.
 binary-arch: build install
