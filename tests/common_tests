@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+setopt shwordsplit
+
+oneTimeSetUp() {
+    OLDPATH=$PATH
+
+    . ../core.sh
+
+    export PATH=$OLDPATH
+}
+
+
+SHUNIT_PARENT=$1
+. ./shunit2
