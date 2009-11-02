@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 # Filename:      core.sh
 # Purpose:       core functionality for determining grml specific options.
 # Authors:       grml-team (grml.org)
@@ -86,7 +86,7 @@ checkvalue(){
 
 # Are we using grml-small?
 checkgrmlsmall(){
-  grep -q small /etc/grml_version 2>>$DEBUG && return 0 || return 1
+  grep -q small /etc/grml_version 2>/dev/null && return 0 || return 1
 }
 
 ###}}}
