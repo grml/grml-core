@@ -1,0 +1,16 @@
+Source: grml-core
+Section: grml
+Priority: extra
+Maintainer: Ulrich Dangel <mru@grml.org>
+Build-Depends: debhelper (>= 7)
+Build-Depends-Indep: asciidoc, xsltproc, docbook-xsl
+Standards-Version: 3.8.3
+Vcs-git: git://git.grml.org/grml-core.git
+Vcs-Browser: http://git.grml.org/?p=grml-core.git
+
+Package: grml-core
+Architecture: all
+Depends: ${misc:Depends}, zsh
+Description: core functionality for determining grml specific options
+ This package provides basic access to grml specific functionality, like
+ determing boot parameters.
